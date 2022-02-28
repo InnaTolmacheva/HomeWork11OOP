@@ -34,7 +34,6 @@ public class RadioTest {
         assertEquals(expected, actual);
     }
 
-
     @ParameterizedTest
     @CsvFileSource(resources = "/increaseVolume.csv")
     public void increaseVolume(int current, int expected) {
@@ -47,7 +46,6 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
 
         assertEquals(expected, actual);
-
     }
 
     @ParameterizedTest
@@ -62,6 +60,5 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
 
         assertEquals(expected, actual);
-
     }
 }
